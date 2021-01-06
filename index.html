@@ -10,43 +10,39 @@
 
       <h1>CasalCalc</h1>
 
+<div class="inputs">
+  <input type="text" id="descriptionInput" placeholder="Digite a descrição aqui" required/>
+  <input type="number" id="valueInput" placeholder="Valor (Ex. 500.00)" required>
+</div>
 
-        <input type="text" name="inputItem" placeholder="Digite aqui..." />
         <div class="buttons">
-          <button type="button" name="addItemGuilherme">Adicionar para Guilherme</button>
-          <button type="button" name="addItemAlice">Adicionar para Alice</button>
-          <button type="button" name="addItemBoth">Adicionar para Ambos</button>
+          <button type="submit" id="btnAddGuilherme">Adicionar para Guilherme</button>
+          <button type="submit" id="btnAddAlice">Adicionar para Alice</button>
+          <button type="submit" id="btnAddBoth">Adicionar para Ambos</button>
         </div>
 
         <div class="lists">
           <div class="list">
             <h2>Guilherme</h2>
-            <ul id="listGuilherme" title="aaa">
-              <li>Compra cartao <span>R$300,00</span></li>
-              <li>Compra cartao <span>R$300,00</span></li>
-              <li>Compra cartao <span>R$300,00</span></li>
-            </ul>
+            <table id="listGuilherme">
+            </table>
+            <h3 id="totalGuilherme"></h3>
           </div>
           <div class="list">
-            <h2>Guilherme</h2>
-            <ul id="listGuilherme" title="aaa">
-              <li>Compra cartao <span>R$300,00</span></li>
-              <li>Compra cartao <span>R$300,00</span></li>
-              <li>Compra cartao <span>R$300,00</span></li>
-            </ul>
+            <h2>Alice</h2>
+            <table id="listAlice">
+            </table>
+            <h3 id="totalAlice"></h3>
           </div>
           <div class="list">
-            <h2>Guilherme</h2>
-            <ul id="listGuilherme" title="aaa">
-              <li>Compra cartao <span>R$300,00</span></li>
-              <li>Compra cartao <span>R$300,00</span></li>
-              <li>Compra cartao <span>R$300,00</span></li>
-            </ul>
+            <h2>Ambos</h2>
+            <table id="listBoth">
+            </table>
+            <h3 id="totalBoth"></h3>
           </div>
-
-
-
         </div>
+
+        <h2 id="result"></h2>
 
 
 

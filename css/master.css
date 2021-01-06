@@ -1,7 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   border: 0;
 
-  box-sizing: border-box;  
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #499F68;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.app{
+  background-color: #EDE6E3;
+  width: 80vw;
+  border-radius: 10px;
+  margin: 15px auto;
+  box-shadow: 6px 6px #36382E;
+}
+
+h1{
+  text-align: center;
+  color: #157A6E;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 4rem;
+}
+
+.inputs{
+  display:flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+.inputs input{
+  font-size: 1.5rem;
+  margin: 20px auto;
+  display: block;
+  background-color: #DADAD9;
+  padding: 15px 15px;
+}
+
+.inputs #descriptionInput{
+  width: 70%;
+}
+.inputs #valueInput{
+  width: 30%;
+}
+
+.lists,.buttons{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 10px auto;
+}
+
+
+
+.buttons button{
+  width: 250px;
+  color: white;
+  background-color: #36382e;
+  font-size: 1rem;
+  border-radius: 15px;
+  padding: 20px;
+}
+.list table{
+  width: 250px;
+}
+
+.list h2{
+  text-align: center;
+  background-color: #157A6E;
+  color: white;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  margin: 20px 0 5px;
+}
+
+.list .valueColumn{
+  font-style: italic;
+  text-align: right;
+}
+
+.list h3{
+  text-align: right;
+}
+
+h2{
+  text-align: right;
+  margin: 30px;
+  font-size: 3rem;
 }

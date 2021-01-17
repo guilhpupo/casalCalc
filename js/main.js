@@ -114,8 +114,14 @@ function resetFields(){
 }
 
 function addItem(i){
+  if(descriptionInput == "" || valueInput == ""){
+    return
+  }
+  
   let description = descriptionInput.value
   let value = valueInput.value
+
+
 
   descriptionInput.value = ""
   valueInput.value = ""
@@ -139,7 +145,7 @@ function startApp(){
   renderLists()
   renderTotals()
   renderResult()
-  resetFields() 
+  resetFields()
 }
 
 startApp()

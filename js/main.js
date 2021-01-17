@@ -114,10 +114,10 @@ function resetFields(){
 }
 
 function addItem(i){
-  if(descriptionInput == "" || valueInput == ""){
+  if(descriptionInput.value == "" || valueInput.value == ""){
     return
   }
-  
+
   let description = descriptionInput.value
   let value = valueInput.value
 
